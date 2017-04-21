@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>TestNG:  TestDebug</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestDebug</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 09 16:37:13 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3886 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yhq.testcases.ReadTestCase.test()'><b>test</b><br>Test class: com.yhq.testcases.ReadTestCase<br>Parameters: YES, login_usernamenotexit, getLogin, https://vip.dccnet.com.cn:452/OFSTSTOREAPP/appLogin/getLogin.action, post, 用户名不存在密码均正确, application/x-www-from-urlencoded, rylCode=2153337903&pwd=57D4DCD415DF3403B1A2DECDC045DBD854591700899B61C536BC0F8F170898189C2A6AEB64B4B4DDAA64E68F8B3C94229A6862783C9195A484D648C4C298BD11D904FF332A01FC697082B5A1222AAB3F2452DB3F9F9A15A0B09983F4AEB68FA514E2F733EB0D918BE1BE5D341801055844B4720CFF3B23A6D5B9BEBD55F5BF3B%7C%7C11C88AE04CEC1BA554D03D5B5970333A83585826C2A985DE5520D9E934389EFB84B52D344FB21AA8EA38A4940C8332692B8D4DA2393549212EAFDC0F11CA5C9CE416120C3AD9F0A63BA563AC864476B91B212EC0A0E96ECDDC2EF0E322453FC613BC1F5F3D7AEBFDFF9EF569F6CB3EB8612CDA1AC26E&custMac=867993020603468&passwdChangeRule=1280%230&userName=3100015183456789&userAgent=elife_mobile_android&passwdRule=113261125234135216141154259162282172290226323721242792251, 40000001, 用户名不存在</td>
+<td></td>
+<td>1</td>
+<td>com.yhq.testcases.ReadTestCase@281fba6e</td></tr>
+<tr>
+<td title='com.yhq.testcases.ReadTestCase.test()'><b>test</b><br>Test class: com.yhq.testcases.ReadTestCase<br>Parameters: NO, login3_pwderror, getLogin, https://vip.dccnet.com.cn:453/OFSTSTOREAPP/appLogin/getLogin.action, post, 密码不正确, application/x-www-from-urlencoded, rylCode=2153337903&pwd=5F3D7AEBFDFF9EF569F6CB3EB8612CDA1AC26E&custMac=867993020603468&passwdChangeRule=1280%230&userName=31000151833&userAgent=elife_mobile_android&passwdRule=113261125234135216141154259162282172290226323721242792251, null, null</td>
+<td></td>
+<td>0</td>
+<td>com.yhq.testcases.ReadTestCase@281fba6e</td></tr>
+<tr>
+<td title='com.yhq.testcases.ReadTestCase.test()'><b>test</b><br>Test class: com.yhq.testcases.ReadTestCase<br>Parameters: YES, login2_success, getLogin, https://vip.dccnet.com.cn:452/OFSTSTOREAPP/appLogin/getLogin.action, post, 用户名和密码均正确, application/x-www-from-urlencoded, rylCode=2153337903&pwd=57D4DCD415DF3403B1A2DECDC045DBD854591700899B61C536BC0F8F170898189C2A6AEB64B4B4DDAA64E68F8B3C94229A6862783C9195A484D648C4C298BD11D904FF332A01FC697082B5A1222AAB3F2452DB3F9F9A15A0B09983F4AEB68FA514E2F733EB0D918BE1BE5D341801055844B4720CFF3B23A6D5B9BEBD55F5BF3B%7C%7C11C88AE04CEC1BA554D03D5B5970333A83585826C2A985DE5520D9E934389EFB84B52D344FB21AA8EA38A4940C8332692B8D4DA2393549212EAFDC0F11CA5C9CE416120C3AD9F0A63BA563AC864476B91B212EC0A0E96ECDDC2EF0E322453FC613BC1F5F3D7AEBFDFF9EF569F6CB3EB8612CDA1AC26E&custMac=867993020603468&passwdChangeRule=1280%230&userName=31000151833&userAgent=elife_mobile_android&passwdRule=113261125234135216141154259162282172290226323721242792251, 0, 操作成功</td>
+<td></td>
+<td>1</td>
+<td>com.yhq.testcases.ReadTestCase@281fba6e</td></tr>
+<tr>
+<td title='com.yhq.testcases.ReadTestCase.test()'><b>test</b><br>Test class: com.yhq.testcases.ReadTestCase<br>Parameters: YES, upadte1, updateUserName, https://vip.dccnet.com.cn:452/OFSTSTOREAPP/appLogin/updateUserName.action, post, 修改用户名成功, application/x-www-from-urlencoded, newUserName=us_12345&custMac=867993020603468&userAgent=elife_mobile_android&, 0, null</td>
+<td></td>
+<td>0</td>
+<td>com.yhq.testcases.ReadTestCase@281fba6e</td></tr>
+<tr>
+<td title='com.yhq.testcases.ReadTestCase.test()'><b>test</b><br>Test class: com.yhq.testcases.ReadTestCase<br>Parameters: YES, upadte2, updateUserName, https://vip.dccnet.com.cn:452/OFSTSTOREAPP/appLogin/updateUserName.action, post, 修改用户名-用户已存在, application/x-www-from-urlencoded, userAgent=elife_mobile_android&newUserName=us_12345&custMac=867993020603468&, 40000027, 用户名已存在</td>
+<td></td>
+<td>0</td>
+<td>com.yhq.testcases.ReadTestCase@281fba6e</td></tr>
+</table><p>
+</body>
+</html>

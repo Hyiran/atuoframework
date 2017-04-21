@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="505" started-at="2017-04-01T07:26:28Z" finished-at="2017-04-01T07:26:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="505" started-at="2017-04-01T07:26:28Z" finished-at="2017-04-01T07:26:28Z">
+      <class name="com.yhq.test.ExcelWriterTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.yhq.test.ExcelWriterTest@2791535f]" name="f" duration-ms="496" started-at="2017-04-01T15:26:28Z" finished-at="2017-04-01T15:26:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.yhq.test.ExcelWriterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
